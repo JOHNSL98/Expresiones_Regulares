@@ -29,7 +29,7 @@ function validar() {
     if(email == ''){
         alert("Ingrese un correo.");
     } else {
-        expreg = new RegExp("^[^@]+@[^@]\\.\\[a-zA-Z]{2,}$");
+        expreg = new RegExp("^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$");
         if(expreg.test(email)) {
             alert("El correo es correcto");
         } else {
